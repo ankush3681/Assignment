@@ -1,0 +1,60 @@
+
+*{
+    font-family: sans-serif;
+}
+
+.container{
+    background:linear-gradient(to right,rgba(247, 92, 190,0.8)20%,rgba(255, 196, 3, 0.7));
+    width:100%;
+    height:2000px;
+    border:1px solid red;
+}
+
+.background-img{
+    width:100%;
+    height:800px;
+    background-image: url(./background.jpg);
+    background-size: cover;
+}
+
+.food-container{
+    text-align: center;
+}
+
+.food-container h1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 3rem;
+    color:white;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards > div{
+    width:18%;
+    padding:1.5%;
+    /* margin: 5%; */
+    background-color: white;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 25%;
+}
+
+.cards > div > img{
+    width:100%;
+    height:260px;
+    border-top-right-radius: 20%;
+}
+
+button{
+    color:black;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-top: 5%;
+    padding:1rem 4rem;
+    border-radius: 3rem;
+    border:0;
+    background-color: rgba(232, 227, 230, 0.5);
+
+}
