@@ -1,5 +1,7 @@
 * {
   font-family: sans-serif;
+  margin:0;
+  padding:0;
 }
 
 /* Navbar styling */
@@ -147,6 +149,19 @@
   object-fit: cover;
 }
 
+.cards > div > div{
+  padding:2%;
+  margin:2% 0;
+}
+
+.cards > div >div > h2{
+  margin-bottom: 20px;
+}
+
+.cards > div >div > p{
+ line-height: 1.5rem;
+}
+
 button {
   color: black;
   font-weight: bolder;
@@ -239,6 +254,6 @@ button:hover{
   /* bottom section */
 
   .cards > div {
-    padding: 4%;
+    padding: 5%;
   }
 }
