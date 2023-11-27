@@ -1,150 +1,244 @@
-
-*{
-    font-family: sans-serif;
+* {
+  font-family: sans-serif;
 }
 
-.container{
-    background:linear-gradient(to right,rgba(247, 92, 190,0.8)20%,rgba(255, 196, 3, 0.7));
-    width:100%;
-    height:auto;
-    padding-bottom:5%;
+/* Navbar styling */
+
+.navbar {
+  width: 100vw;
+  height: auto;
+  background-color: white;
+  position: fixed;
+  padding: 5px;
+  z-index: 100;
+  top: 0;
+  display: flex;
 }
 
-.background-img{
-    width:100%;
-    height:800px;
-    background-image: url(./background.jpg);
-    background-size: cover;
-    position: relative
+.nav1 {
+  width: 10%;
+  height: 100%;
 }
 
-.background-img > div{
-   width:40%;
-   height:auto;
-   padding:1.5rem;
-   background-color: rgba(228, 102, 117, 0.6);
-   position: absolute;
-   top: 30%;
-   left:6%;
-   color:white;
+.nav2 {
+  width: 75%;
+  height: 100%;
 }
 
-.background-img > div h1{
-    font-size: 3rem;
-    margin-bottom: 0.6rem;
-    margin-top: 1rem;
+.nav2 ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
 }
 
-.background-img > div p{
-    width:80%;
-    font-size: larger;
-    line-height: 1.5rem;
-    
+.nav2 ul a {
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: black;
+  font-size: 1.3rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.food-container{
-    text-align: center;
+.nav3 {
+  width: 12%;
+  height: 100%;
 }
 
-.food-container h1{
-    margin-top: 5%;
-    font-size: 3rem;
-    color:white;
+.nav3 ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+.nav3 ul a {
+  padding-right: 10px;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: black;
 }
 
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.cards > div{
-    width:250px;
-    padding:1.5%;
-    margin: 4%;
-    background-color: white;
-    border-top-right-radius: 20%;
-    border-bottom-left-radius: 25%;
+.nav3 .phone {
+  font-size: 1rem;
+  padding: 3px;
+  margin-right: 15px;
+  border: 2px solid black;
+  border-radius: 50%;
 }
 
-.cards > div > img{
-    width:100%;
-    height:260px;
-    border-top-right-radius: 20%;
+/* Top section styling */
+
+.container {
+  background: linear-gradient(
+    to right,
+    rgba(247, 92, 190, 0.8) 20%,
+    rgba(255, 196, 3, 0.7)
+  );
+  width: 100%;
+  height: auto;
+  padding-bottom: 5%;
 }
 
-button{
-    color:black;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    margin-top: 5%;
-    padding:1rem 4rem;
-    border-radius: 3rem;
-    border:0;
-    background-color: rgba(232, 227, 230, 0.5);
-
+.background-img {
+  position: relative;
+}
+.background-img img{
+  height:80%;
+  width:100%;
 }
 
-
-
-
-
-
-@media (max-width:1100px){
-
-    /* top section */
-
-    .background-img > div{
-        width:55%;
-        padding:1rem;
-     }
-
-    .background-img > div h1{
-        font-size: 2.3rem;
-        margin-bottom: 5px;
-        margin-top: .5rem;
-    }
-
-
-
-    /* bottom section */
-
-    .cards > div{
-       padding:2%;
-    }
+.trasparent-box {
+  width: 40%;
+  height: auto;
+  padding: 1.5rem;
+  background-color: rgba(228, 102, 117, 0.6);
+  position: absolute;
+  top: 29%;
+  left: 5%;
+  color: white;
 }
 
+.trasparent-box > h1 {
+  font-size: 3rem;
+  margin-bottom: 0.6rem;
+  margin-top: 1rem;
+}
 
+.trasparent-box > p {
+  width: 90%;
+  font-size: larger;
+  line-height: 1.5rem;
+}
 
+/* Bottom Section styling */
 
+.food-container {
+  text-align: center;
+}
 
+.food-container h1 {
+  margin-top: 5%;
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 5px;
+}
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.cards > div {
+  width: 250px;
+  padding: 1.5%;
+  margin: 3%;
+  background-color: white;
+  border-top-right-radius: 67px;
+  border-bottom-left-radius: 67px;
+}
 
-@media (max-width:500px){
+.cards > div:hover{
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;}
 
-/* top section */
+.cards > div > img {
+  width: 100%;
+  height: 260px;
+  border-top-right-radius: 50px;
+  object-fit: cover;
+}
 
+button {
+  color: black;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-top: 5%;
+  padding: 1rem 4rem;
+  border-radius: 3rem;
+  border: 0;
+  background-color: rgba(232, 227, 230, 0.5);
+  cursor:pointer;
+}
 
-.background-img > div{
-    width:60%;
-    padding:1rem;
- }
+button:hover{
+  background-color: rgba(212, 203, 208, 0.5);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
 
-.background-img > div h1{
-    font-size: 1.5rem;
+@media (max-width: 1100px) {
+
+  /* top section */
+
+  .trasparent-box {
+    width: 40%;
+    padding: 1rem;
+  }
+
+  .trasparent-box > h1 {
+    font-size: 2rem;
     margin-bottom: 5px;
-    margin-top: .5rem;
-}
+    margin-top: 0.5rem;
+  }
 
-.background-img > div p{
-    width:80%;
+  .trasparent-box > p {
+    width: 90%;
     font-size: medium;
-    line-height: 1.5rem;    
+    line-height: 1.2rem;
+  }
+
+  /* bottom section */
+
+  .cards > div {
+    padding: 2%;
+  }
 }
 
+@media (max-width:850px){
 
-/* bottom section */
+  /* top section */
 
-    .cards > div{
-        padding:4%;
-     }
+  .trasparent-box {
+    width: 41%;
+    padding: 1rem;
+  }
+
+  .trasparent-box > h1 {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+
+  .trasparent-box > p {
+    width: 90%;
+    font-size: small;
+    line-height: 1rem;
+    margin-top: 0;
+  }
+
+}
+
+@media (max-width: 550px) {
+  /* top section */
+
+  .trasparent-box {
+    width: 45%;
+    padding: .5rem .2rem;
+  }
+
+  .trasparent-box > h1 {
+    font-size: medium;
+    margin-bottom: 3px;
+    margin-top: 0rem;
+  }
+
+  .trasparent-box > p {
+    width: 100%;
+    font-size: xx-small;
+    line-height: 0.6rem;
+    margin-top: 0;
+  }
+
+  /* bottom section */
+
+  .cards > div {
+    padding: 4%;
+  }
 }
